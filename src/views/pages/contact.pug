@@ -1,0 +1,38 @@
+extends ../templates/template
+include ../mixins/menuHeader
+
+block main
+    +MenuHeader('AdobeStock_painting.jpeg','Contact')
+    .container.contactContent
+        .row
+            .col-12.text-center.contactContent__info
+                h2 Contact Info
+                p Contact our team today and get a free estimate for any of the services that we offer. If you hire us to do the job we will work hard and smart until your expectations are exceeded.
+            .col-12.contactContent__datalle
+                .row
+                    .col-md-3.col-sm-12
+                        a(href="#map").text-center
+                            .pb-4
+                                img.contactContent__img(src="../images/icon/pinred.png", alt="icon-ubicacion")
+                                h4.contactContent__titleCard Location
+                                p.contactContent__paragrphCard Durham, NC
+                    .col-md-3.col-sm-12
+                        a(href="tel:+1919-423-7284").text-center
+                            .pb-4
+                                img.contactContent__img(src="../images/icon/phone-callred.png", alt="icon-phone")
+                                h4.contactContent__titleCard Phone
+                                p.contactContent__paragrphCard 919-423-7284
+                    .col-md-3.col-sm-12
+                        .text-center.pb-4
+                            img.contactContent__img(src="../images/icon/calendarred.png", alt="icon-calendar")
+                            h4.contactContent__titleCard Workdays
+                            p.contactContent__paragrphCard Monday - Saturday
+                    .col-md-3.col-sm-12
+                        .text-center.pb-4 
+                            img.contactContent__img(src="../images/icon/clockred.png", alt="icon-clock")
+                            h4.contactContent__titleCard Work Hours
+                            p.contactContent__paragrphCard 8:00 AM - 5:00 PM
+        .contactContent__form
+            h1 Map
+    .contactContent__mapContent
+        iframe.contactContent__map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206576.60038959273!2d-79.0249965121342!3d36.00174546344826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ace471120f66f1%3A0xe17ada898a46f27e!2sDurham%2C%20Carolina%20del%20Norte%2C%20EE.%20UU.!5e0!3m2!1ses!2sni!4v1629751586698!5m2!1ses!2sni" style="border:0;" allowfullscreen="" loading="lazy")

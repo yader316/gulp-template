@@ -1,0 +1,27 @@
+.cardContent{
+    &__img{
+        width: 100%;
+    }
+    &__rightContent, &__leftContent{
+        padding-bottom: 104px;
+    }
+    &__info{
+        padding: 40px;
+    }
+    &__btnContent{
+        width: 100%;
+    }
+    @media screen and (max-width: 540px) {
+        &__rightContent{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__info{
+            text-align: center;
+        }
+        &__rightContent, &__leftContent{
+            padding-bottom: 80px;
+        }
+    }
+}
+

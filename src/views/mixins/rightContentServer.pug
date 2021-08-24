@@ -1,0 +1,10 @@
+mixin RightContentServer(titulo,imag,paragrph)
+    .row.cardContent__rightContent
+            .col-md-6.col-sm-12.d-flex.flex-column.justify-content-center.cardContent__info
+                h2.cardContent__titleCard #{titulo}
+                p.cardContent__paragrphCard #{paragrph}
+                .cardContent__btnContent
+                    a.default-btn(href="/contact.html")='Free Estimate'
+            .col-md-6.col-sm-12
+                .cardContent__imgContent
+                    img.cardContent__img(src=`../images/${imag}`, alt=`${titulo}`)

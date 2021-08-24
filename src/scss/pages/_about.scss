@@ -1,0 +1,15 @@
+.aboutContent{
+    padding: 104px 0;
+    &__info{
+        padding: 40px;
+    }
+    @media screen and (max-width: 540px) {
+        &__rightContent{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__info{
+            text-align: center;
+        }
+    }
+}

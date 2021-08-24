@@ -1,0 +1,7 @@
+include ../mixins/menu
+
+mixin MenuHeader(image,titulo,texto)
+     .main-wrraper(style=`background-image: url("../images/${image}");`)
+        +Menu
+        .container
+            h1 #{titulo}

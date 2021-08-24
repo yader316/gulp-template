@@ -1,0 +1,38 @@
+// impor variables
+@import '../scss/config/variables';
+@import '../scss/config/basic';
+
+
+// pages
+@import '../scss/pages/contact';
+@import '../scss/pages/about';
+@import '../scss/pages/home';
+
+
+
+
+//componentes
+@import '../scss/components/menuHeader';
+@import '../scss/components/footer';
+@import '../scss/components/cardContent';
+
+//swiper styles
+@import '../scss/vendedor/swiperStyles';
+
+
+
+
+//stylo de bootstrap edit
+
+.navbar-light .navbar-toggler {
+    color: white;
+    background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
+    transition: all ease-in-out 0.3s;
+    &:hover{
+        color: white;
+    }
+}

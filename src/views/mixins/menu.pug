@@ -1,0 +1,14 @@
+mixin Menu
+    .container.headerContainer
+        nav.navbar.navbar-expand-lg.navbar-light
+            a.navbar-brand(href='/')
+                .d-flex.justify-content-center.align-items-center.col-md-5.col.sm-12
+                    img.headerContainer__logo(src="../images/VELASQUEZ-PAINTING-wh.png", alt="logo-Header")
+            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-1") #[span.navbar-toggler-icon]
+            .collapse.navbar-collapse#navbar-1
+                ul.navbar-nav.ml-auto.mt-2.mt-lg-0
+                    li.nav-item: a.nav-link(href="/")='Home'
+                    li.nav-item: a.nav-link(href="/about.html")='About'
+                    li.nav-item: a.nav-link(href="/services.html")='Services'
+                    li.nav-item: a.nav-link(href="/gallery.html")='Gallery'
+                    li.nav-item: a.nav-link(href="/contact.html")='Contact'

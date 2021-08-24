@@ -1,0 +1,21 @@
+extends ../templates/template
+include ../mixins/menuHeader
+
+block main
+    +MenuHeader('AdobeStock_painting.jpeg','About')
+    .container.aboutContent
+        .row.aboutContent__rightContent
+            .col-md-6.col-sm-12.d-flex.flex-column.justify-content-center.aboutContent__info
+                h2.aboutContent__titleCard A Little About Us
+                p.aboutContent__paragrphCard
+                | Velasquez Painting is a family-owned company that was established many years ago in Durham, NC. Our company was built with the commitment to ensure cost-effectiveness and high-quality in every painting project we are hired to work on for the community of Durham, NC and the surrounding areas. Our company was founded under the great values of:
+                ul(style="text-align: start; padding: 20px;")
+                    li Professionalism
+                    li Commitment
+                    li Diligence
+                    li Cost-Effectiveness
+                .aboutContent__btnContent
+                    a.default-btn(href="/contact.html")='Free Estimate'
+            .col-md-6.col-sm-12
+                .aboutContent__imgContent
+                    img.aboutContent__img(src=`../images/`, alt='img-about')

@@ -1,0 +1,58 @@
+.footerContent{
+    background-color: $color-footer;
+    color: $color-white;
+    padding: 100px 0 40px 0;
+    &__redesIcon{
+        background-color:$color-principal-naranja ;
+        border-radius: 50%;
+        padding: 15px;
+        margin-right: 10px;
+        transition: all ease-in-out 0.3s;
+        &:hover{
+            background-color: $color-secundary-azul;
+        }
+    }
+    & ul{
+        list-style: none;
+        padding: 0;
+    }
+    & ul li {
+        margin-bottom: 8px;
+    }
+    &__iconNavigation,
+    &__iconList{
+        color: $color-white;
+        transition: all ease-in-out 0.3s;
+        &:hover{
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+    &__iconNavigation{
+        &::before{
+            content: '>';
+            color: $color-white;
+            font-size: 18px;
+            padding-right: 8px;
+        }
+        &:hover{
+            color: $color-principal-naranja;
+            text-decoration: none;
+            &::before{
+                content: '>';
+                color:$color-principal-naranja;
+            }
+        }
+    }
+    &__logo{
+        width: 100%;
+    }
+    &__iconsContact{
+        width: 18px;
+        margin-right: 8px;
+    }
+    @media screen and (max-width: 540px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

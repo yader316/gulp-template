@@ -1,0 +1,43 @@
+mixin Footer
+    .footerContent
+        .container
+            .row
+                .d-flex.justify-content-center.align-items-center.col-md-4.col.sm-12
+                    img.footerContent__logo(src="../images/VELASQUEZ-PAINTING-wh.png", alt="logo-footer")
+                .col-md-8.col-sm-12
+                    .row
+                        .col-md-5.col.sm-12.pb-4
+                            h4.footerContent__title About
+                            p.footerContent__paragraph
+                                |Velasquez Painting is a family-owned company that was established many years ago in Durham, NC.
+                            .footerContent__redes
+                                a(href="https://www.facebook.com/Velasquez-Painting-101137472295350/" target="_blank")
+                                    img.footerContent__redesIcon(src="../images/icon/facebook.png", alt="icon-facebook")
+                                a(href="https://twitter.com/VelasquezPaint" target="_blank")
+                                    img.footerContent__redesIcon(src="../images/icon/twitter.png", alt="icon-twitter")
+                        .col-md-3.col-sm-12.pb-4
+                            h4.footerContent__title Navigation
+                            ul
+                                li: a.footerContent__iconNavigation(href="/")='Home'
+                                li: a.footerContent__iconNavigation(href="/about.html")='About'
+                                li: a.footerContent__iconNavigation(href="/services.html")='Services'
+                                li: a.footerContent__iconNavigation(href="/gallery.html")='Gallery'
+                                li: a.footerContent__iconNavigation(href="/contact.html")='Contact'
+                        .col-md-4.col-sm-12
+                            h4.footerContent__title Contact
+                            ul
+                                li: a.footerContent__iconList(href="#map")
+                                        img.footerContent__iconsContact(src="../images/icon/maps-and-flags.png", alt="")
+                                        span Durham, NC
+                                li: a.footerContent__iconList(href="tel:+1919-423-7284")
+                                        img.footerContent__iconsContact(src="../images/icon/call.png", alt="")
+                                        span 919-423-7284
+                                li: div
+                                        img.footerContent__iconsContact(src="../images/icon/calendar.png", alt="")
+                                        span Monday - Saturday
+                                li: div
+                                        img.footerContent__iconsContact(src="../images/icon/clock.png", alt="")
+                                        span 8:00 AM - 5:00 PM
+                                li: div
+                                        img.footerContent__iconsContact(src="../images/icon/moneyWhite.png", alt="")
+                                        span We Accept Cash & Checks

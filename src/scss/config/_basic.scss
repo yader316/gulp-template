@@ -1,0 +1,14 @@
+//boton general
+.default-btn{
+    color: $color-white;
+    display: inline-block;
+    padding: 8px 25px 9px;
+    background: $color-principal-naranja;
+    text-transform: capitalize;
+    transition: all ease-in-out 0.3s;
+    &:hover{
+        color: $color-white;
+        background-color: $color-principal-naranja-hover;
+        text-decoration: none;
+    }
+}
